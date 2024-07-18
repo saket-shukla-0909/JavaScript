@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <script>
+        //Prompt Function
+        console.log("Prompt is a pre defined function in javascript. It is just like a container which appears before entering into the page on the browser which takes input from the user");
+        console.log("It contains two button. Ok and cancel")
+        let age = prompt("enter the value of age: ");
+        let num = parseInt(age);
+        console.log("The value of age is: ",num);
+        console.log(typeof(num));
+        
+        //Alert Functiion
+        console.log("Alert is a pre defined function in javascript. It created pop-up window with single button ok before entering into the page. It is used to alert the user");
+        
+        // Conditional Statement 
+        console.log("Conditional statement is a statement which can be either true or false");
+
+        // IF statement
+        console.log("IF Conditional statement contains condition and block of code. Block of code will excute when the condition of IF statement will true")
+        if(age>18){
+            alert("You are eligible for voting");
+        }
+
+        //IF - ELSE statement
+        console.log("IF-ELSE conditional statement in which if and else both have their own block of code and if also contain condition. ifconditon will true then code of if block will excute other wise else block will excute");
+        console.log("without if else will not be excute");
+        if(age>18)
+        {
+            alert("You are eligible for voting");
+        }else{
+            alert("You are not eligible for voting");
+        }
+
+        // Else-IF statement
+        if(age>18){
+            alert("are you college student?")
+        }else if(age>26){
+            alert("are you married?")
+        }else if(age>46){
+            alert("Are you an old person?")
+        }
+        else{
+            alert("you are a school student")
+        }
+
+        // Switch Statement
+        console.log("Swicth Statement")
+
+        var fruits = prompt("Enter the name of fruits");
+        switch(fruits){
+            case 'Orange': console.log("Cost of Orange fruit is 120 rs/kg");
+                            break;
+            case 'Apple':  console.log("Cost of Apple fruit is 140 rs/kg");
+                            break;
+            case 'Banana':  console.log("Cost of Banana fruit is 70 rs/dozen");
+                            break;
+            case 'Mango':   console.log("Cost of Mango fruit is 40 rs/kg");
+                            break;
+            case 'Guava':   console.log("Cost of Guava fruit is 40 rs/kg");
+                            break;
+            default: console.log("You are giving wrong information");
+                break;
+        }
+    </script>
+</body>
+</html>
