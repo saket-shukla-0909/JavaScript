@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <script>
+        //Que 1.) Create an array of numbers and take input from the users to add numbers to this array?
+
+        let a = [4,5,6,7,8]
+        let b = prompt("enter the value of b: ");
+        let c = parseInt(b);
+        console.log(a.push(c));
+        console.log(a[5]);
+
+        //Que 2.) Keep adding numbers to the array in 1 untill 0 is added to the array
+
+        let num = [5,2,30,0,8,9];
+        let num1;
+        do{
+                num1 = prompt("enter the value: ");
+                num.push(num1);
+        }while(num1!=0)
+        console.log(num);
+
+        //Que 3.) filter the number which is divisible by 10 from a given array
+
+                let numb = [10,55,60,88,23,45,30,9,4];
+                let ans = numb.filter((value)=>{
+                        return value%10 == 0;
+                }) 
+                console.log(ans)
+        
+        // Que 4.) Create an array of square of given numbers
+
+                let N = [1,2,3,4,5];
+                let square = N.map((value)=>{
+                        return value*value
+                }) 
+                console.log(square)
+
+        // Que5.) Uuse reduce function to calculate factorial of a given number from an array of first n natural number
+                  // n being the number whose factorial needs to be calculated
+
+                  let arr4 = [1,2,3,4,5,6,7,8,9];
+                   let n = arr4.reduce((n1, n2)=>{
+                        return n1*n2;
+                   })
+
+        </script>
+</body>
+</html>
