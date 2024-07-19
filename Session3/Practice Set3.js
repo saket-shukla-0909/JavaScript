@@ -19,12 +19,12 @@ for(a in Marks){
 
 // Que 3.> Write a program to print "Try Again" until the user enters the correct number?
 
-// let CN = 4;
-// let i;
-// while(i!=CN){
-//     i = prompt("Enter the value of i: ");
-//     console.log("Try Again");
-// }
+let CN = 4;
+let i;
+while(i!=CN){
+    i = prompt("Enter the value of i: ");
+    console.log("Try Again");
+}
 console.log("You have entered a correct number");
 
 // Que 4.> Write a Function to find mean of 5 numbers?
